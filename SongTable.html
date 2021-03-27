@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	 <title>JSON Song List</title>
+    	 <style>
+    	 	body{
+    		background-color: powderblue;
+
+    	}
+    	
+    	
+
+    	h1{
+    		text-align:center;
+    		background-color: green;
+    	}
+    	div{
+    		text-align:center;
+    		color:green;
+    	}
+    	 </style>
+    	
+    </head>
+    <body>
+    	<script type="text/javascript"    src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+    	<h1> JSON Song List </h1>
+    	<div id="song_list_tab"></div>
+    	
+    	
+        <!--getting a string -->
+    	
+
+    	<script>
+
+    		 $.get("https://raw.githubusercontent.com/baffyntiamoah/songlist/main/JSON-songlist.json", function(song) {
+    		 	var songData = ""
+    		 	song = JSON.parse(song)
+    		 	song.forEach(function(song){
+    		 		
+    		 		songData += "Artist: " + song.artist + "<br/>" 
+    		 		songData += "Title: "  + song.title + "<br/>"
+    		 		songData += "Genre: "  + song.genre + "<br/>"
+    		 		songData += "Released:"+ song.year + "<br/>" + "<br/>"
+    		 			
+    		 	})
+    		 	document.getElementById('song_list_tab').innerHTML = songData;
+    		 })
+    		 
+    	</script>
+
+    </body>
+
+
+
+</html>

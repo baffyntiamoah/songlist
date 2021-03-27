@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<meta charset="utf-8">
+    <title>JSON Song List</title>
+    <style>
+    	body{
+    		background-color: grey;
+
+
+    	}
+    	form {
+    		text-align:center;
+    	}
+    	select{
+    		font-family: Avenir;
+    		color:red;
+    	}
+
+    	h1{ color:white;
+    		text-align:center;
+    		background-color: red;
+    	}
+    	button{
+    		background-color: red;
+    	}
+    	div{
+    		text-align: center;
+    		color:white;
+    		
+
+    	}
+    </style>
+   </head>
+   <body>
+   	      <script type="text/javascript"    src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+     
+
+   	     <h1>Song List</h1>
+   	        	     
+   	     <form id="form-genre">
+   	     	 <select id="framework">
+   	     	 	  <option value="0"> Choose a genre </option>
+                  <option value="Hiphop">Hiphop</option>
+                 <option value="Alt RnB">Alt RnB</option>
+                 <option value="Pop">Pop</option>
+                 <option value="Neo soul">Neo soul</option>
+                 <option value="Deep House">Deep House</option>
+                 <option value="Synthwave">Synthwave</option>
+                 <option value="Electropop">Electropop</option>
+                 <option value="Dance-pop">Dance-pop</option>
+
+               </select>
+              <button type="button" value="Filter" onclick="Filterfunc()">Filter</button>
+    	 </form>
+
+    	 <br><br>
+
+    	 <div id="filtersongs"></div>
+
+    	 <script>
+
+
+    	 
+         
+         function Filterfunc(){
+         	
+         	let selectForm = document.getElementById('framework')
+    	 	let val = selectForm.value
+    	 	$.get("https://raw.githubusercontent.com/baffyntiamoah/songlist/main/JSON-songlist.json", function(song) {
+    		 	var songData = ""
+    		 	song_l = JSON.parse(song)
+    		 
+    		 	
+    		 	song_l.forEach(function(song){
+
+    		 		for (let i = 0; i < song.genre.length; i++) {
+    		 			if (val == song.genre[i])
+    		 				songData += song.title + "<br/>"
+
+
+    		 		}
+    		 		
+    		 		
+    		 		
+    		 		
+    		 	})
+    		 	document.getElementById('filtersongs').innerHTML = songData;
+    		 })
+
+    	 }  
+    	 
+    	</script>
+
+
+
+   </body>
+</html>
