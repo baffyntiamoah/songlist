@@ -42,9 +42,15 @@
                  ,"genre":["Pop"],
              "year":"2019"},
 
-    			 {"artist":"Nicki Minaj","title":"The Night is still Young","genre":["Pop"],"year":"2014"},
+    			 {"artist":"Nicki Minaj"
+                 ,"title":"The Night is still Young",
+             "genre":["Pop"],
+         "year":"2014"},
 
-    			 {"artist":"Kali Uchis","title":"Fue Mejor","genre":["Alt RnB"],"year":"2020"}
+    			 {"artist":"Kali Uchis",
+                 "title":"Fue Mejor",
+             "genre":["Alt RnB"],
+         "year":"2020"}
 
     	]
     	
