@@ -1,21 +1,46 @@
 
     	
     	[
-    			 {"artist":"The Weeknd","title":"Blinding Lights","genre":["Electropop", "Synthwave"],"year":"2019"},
+    			 {"artist":"The Weeknd",
+                 "title":"Blinding Lights",
+                 "genre":["Electropop", "Synthwave"],
+                 "year":"2019" 
+                 },
 
-    			 {"artist":"Lana Del Rey","title":"Body Electric","genre":["Alternative RnB", "Pop"],"year":"2012"},
+    			 {"artist":"Lana Del Rey",
+                 "title":"Body Electric",
+                 "genre":["Alt RnB", "Pop"],
+                 "year":"2012"
+                 },
 
-    			 {"artist":"Kanye West","title":"Gold Digger","genre":["Hiphop"],"year":"2005"},
+    			 {"artist":"Kanye West",
+                 "title":"Gold Digger",
+                "genre":["Hiphop"],
+                 "year":"2005"},
 
-    			 {"artist":"Dua Lipa, Angele","title":"Fever","genre":["Dance-pop","Deep House"],"year":"2020"},
+    			 {"artist":"Dua Lipa",
+                 "title":"Fever",
+                "genre":["Dance-pop","Deep House"],
+                 "year":"2020"},
 
-    			 {"artist":"Frank Ocean","title":"ForresT Gump","genre":["Neo soul", "Pop"],"year":"2012"},
+    			 {"artist":"Frank Ocean",
+                 "title":"Forrest Gump",
+               "genre":["Neo soul", "Pop"],
+                "year":"2012"},
 
-    			 {"artist":"Frank Ocean","title":"Nights","genre":["Neo soul"],"year":"2016"},
+    			 {"artist":"Frank Ocean"
+                 ,"title":"Nights",
+               "genre":["Neo soul"],
+                 "year":"2016"},
 
-    			 {"artist":"Pop Smoke","title":"Imperfections","genre":["Hiphop"],"year":"2020"},
+    			 {"artist":"Pop Smoke"
+                 ,"title":"Imperfections",
+                "genre":["Hiphop"],"year":"2020"},
 
-    			 {"artist":"Doja Cat","title":"CyberSex","genre":["Pop"],"year":"2019"},
+    			 {"artist":"Doja Cat",
+                "title":"CyberSex"
+                 ,"genre":["Pop"],
+             "year":"2019"},
 
     			 {"artist":"Nicki Minaj","title":"The Night is still Young","genre":["Pop"],"year":"2014"},
 
