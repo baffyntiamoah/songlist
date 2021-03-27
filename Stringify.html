@@ -2,7 +2,7 @@
 <html>
   <head>
         <meta charset="utf-8">
-         <title>JSON Song List As A String</title>
+         <title>JSON Song List</title>
 
             
     </head>
@@ -16,20 +16,10 @@
     <script>
     		$.get("https://raw.githubusercontent.com/baffyntiamoah/songlist/main/JSON-songlist.json",
     		function (data) {
-    			strSongString = JSON.stringify(data)
-    			document.write(strSongString + "<br/>")
-    			strHTML = "<ul>"
-    			data.forEach(function(song) {
-    				strHTML += "<li>"
-    				        + song.artist + ":"
-    				        + song.title + ":"
-    				        + song.genre + ":"
-    				        + song.year + "</li>" 
-
-    			})
-    			strHTML += "</ul>" 
-    			document.write(strHTML.replace('\n', ''))         
-    		})
+    			strSongString = JSON.stringify(JSON.parse(data));
+                document.write(strSongString + "<br/>");
+                
+        })
     		
     	</script>
     </body>
